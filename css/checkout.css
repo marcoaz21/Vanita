@@ -1,0 +1,99 @@
+/* =========================================================
+   Vanità Boutique — checkout.css (versione Snipcart)
+   Solo stili per icona carrello, bottone card e overlay
+   ========================================================= */
+
+/* ── Icona carrello nella navbar ─────────────────────────── */
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.cart-icon-btn {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-charcoal);
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
+    transition: var(--transition);
+}
+.cart-icon-btn:hover { color: var(--color-gold); }
+
+.cart-badge,
+.snipcart-items-count {
+    position: absolute;
+    top: -6px;
+    right: -8px;
+    background: var(--color-gold);
+    color: #fff;
+    font-size: 0.65rem;
+    font-family: var(--font-serif);
+    font-weight: 700;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.2);
+}
+
+/* ── Bottone aggiungi al carrello nelle card ───────────────── */
+.btn--add-cart {
+    padding: 0.7rem 1.2rem;
+    font-size: 0.78rem;
+    letter-spacing: 1px;
+    margin-top: 0.8rem;
+    width: 100%;
+    transition: background 0.25s ease, transform 0.15s ease;
+}
+.btn--add-cart:active { transform: scale(0.97); }
+
+/* Overlay quickview sulla card */
+.product-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.35);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.product-card:hover .product-overlay { opacity: 1; }
+
+.btn-quick-view {
+    background: rgba(255,255,255,0.95);
+    color: var(--color-charcoal);
+    border: none;
+    padding: 0.6rem 1.4rem;
+    font-family: var(--font-serif);
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: var(--transition);
+}
+.btn-quick-view:hover { background: var(--color-gold); color: #fff; }
+
+/* ── Personalizzazione carrello Snipcart (colori boutique) ── */
+:root {
+    --color-default: var(--color-gold);
+    --color-alt: var(--color-gold-hover);
+}
+.snipcart-modal__container { font-family: var(--font-body) !important; }
+.snipcart__font--secondary { font-family: var(--font-serif) !important; }
+.snipcart-button-primary {
+    background-color: var(--color-gold) !important;
+    border-color: var(--color-gold) !important;
+}
+.snipcart-button-primary:hover {
+    background-color: var(--color-gold-hover) !important;
+}
