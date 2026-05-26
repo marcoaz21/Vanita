@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "foto": "img/placeholder1.jpg",
+        "nome": "Collana Elegante",
+        "marca": "Ottaviani",
+        "prezzo": "120,00€",
+        "descrizione": "Una splendida collana in argento con cristalli incastonati a mano. Pezzo iconico della collezione Ottaviani, perfetto per cerimonie ed eventi eleganti.",
+        "categoria": "Gioielli"
+    },
+    {
+        "id": 2,
+        "foto": "img/placeholder2.jpg",
+        "nome": "Borsa a tracolla",
+        "marca": "Karakorum",
+        "prezzo": "85,00€",
+        "descrizione": "Borsa artigianale in tessuto con decorazioni etno-chic. Capiente e versatile, si abbina a look casual e semi-formali con stile unico.",
+        "categoria": "Accessori"
+    },
+    {
+        "id": 3,
+        "foto": "img/placeholder3.jpg",
+        "nome": "Orecchini Vintage",
+        "marca": "Celeste G",
+        "prezzo": "45,00€",
+        "descrizione": "Orecchini realizzati a mano con pietre naturali. Ogni paio è unico grazie alla lavorazione artigianale Made in Italy di Celeste G.",
+        "categoria": "Gioielli"
+    },
+    {
+        "id": 4,
+        "foto": "img/placeholder4.jpg",
+        "nome": "Bracciale Moderno",
+        "marca": "I Bijoux dell'Anno",
+        "prezzo": "60,00€",
+        "descrizione": "Bracciale in metallo anallergico dal design contemporaneo. Raffinato e leggero, ideale come regalo o per completare un look quotidiano.",
+        "categoria": "Gioielli"
+    }
+]
