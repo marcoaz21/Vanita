@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO -->
+    <title>Catalogo Gioielli e Accessori | Vanità Boutique Caltagirone</title>
+    <meta name="description" content="Esplora il catalogo di collane, orecchini, bracciali e borse artigianali. Collezioni Ottaviani, Karakorum, Celeste G disponibili in boutique a Caltagirone (CT).">
+    <link rel="canonical" href="https://www.vanitaboutique.it/catalogo.html">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Catalogo — Vanità Boutique Caltagirone">
+    <meta property="og:description" content="Gioielli, bijoux e accessori moda selezionati. Scopri la nostra collezione.">
+    <meta property="og:image" content="https://www.vanitaboutique.it/img/og-cover.jpg">
+    <meta property="og:type" content="website">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="catalog-page">
+    <header>
+        <nav class="container">
+            <div class="logo"><a href="index.html" style="text-decoration:none;color:inherit;">Vanità</a></div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#chi-siamo">Chi Siamo</a></li>
+                <li><a href="index.html#brand">I Nostri Brand</a></li>
+                <li><a href="catalogo.html" class="nav-active">Catalogo</a></li>
+                <li><a href="index.html#gallery">Gallery</a></li>
+                <li><a href="index.html#contatti">Contatti</a></li>
+            </ul>
+            <button class="menu-toggle" id="mobile-menu" aria-label="Apri menu" aria-expanded="false">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="catalog-hero">
+            <div class="container reveal">
+                <h1>Il Nostro Catalogo</h1>
+                <p>Esplora la nostra selezione esclusiva di accessori e bijoux</p>
+            </div>
+        </section>
+
+        <section class="catalog-content container">
+            <div class="catalog-controls reveal">
+                <div class="search-box">
+                    <input type="search" id="product-search" placeholder="Cerca un articolo..." aria-label="Cerca prodotto">
+                    <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                </div>
+                <div class="filter-group">
+                    <select id="category-filter" aria-label="Filtra per categoria">
+                        <option value="all">Tutte le Categorie</option>
+                        <option value="Gioielli">Gioielli</option>
+                        <option value="Accessori">Accessori</option>
+                    </select>
+                    <select id="brand-filter" aria-label="Filtra per marca">
+                        <option value="all">Tutte le Marche</option>
+                        <option value="Ottaviani">Ottaviani</option>
+                        <option value="Karakorum">Karakorum</option>
+                        <option value="Celeste G">Celeste G</option>
+                        <option value="I Bijoux dell'Anno">I Bijoux dell'Anno</option>
+                    </select>
+                </div>
+            </div>
+
+            <div id="catalog-grid" class="catalog-grid" role="list" aria-live="polite" aria-label="Prodotti">
+                <!-- Prodotti caricati via JS -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal Dettagli Prodotto -->
+    <div id="product-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-name">
+        <div class="modal-content">
+            <button class="close-modal" aria-label="Chiudi dettagli prodotto">&times;</button>
+            <div class="modal-body">
+                <div class="modal-image">
+                    <img id="modal-img" src="" alt="">
+                </div>
+                <div class="modal-info">
+                    <div id="modal-category" class="product-brand"></div>
+                    <h2 id="modal-name"></h2>
+                    <h3 id="modal-brand"></h3>
+                    <p id="modal-price" class="price"></p>
+                    <p id="modal-description"></p>
+                    <a id="modal-wa-btn" href="#" target="_blank" rel="noopener noreferrer" class="btn btn--whatsapp btn--full">
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.125.557 4.126 1.527 5.859L.057 23.486a.5.5 0 0 0 .614.612l5.763-1.51A11.945 11.945 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.9a9.893 9.893 0 0 1-5.031-1.371l-.361-.214-3.741.981.998-3.648-.235-.374A9.865 9.865 0 0 1 2.1 12C2.1 6.533 6.533 2.1 12 2.1c5.467 0 9.9 4.433 9.9 9.9 0 5.467-4.433 9.9-9.9 9.9z"/></svg>
+                        Scrivici su WhatsApp
+                    </a>
+                    <p class="modal-note">Disponibilità, taglie e colori — rispondiamo entro poche ore.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Vanità Boutique. Tutti i diritti riservati. | Piazza Umberto I, 2 — Caltagirone (CT)</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/catalogo.js"></script>
+</body>
+</html>
